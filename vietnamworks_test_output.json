@@ -1,0 +1,150 @@
+[
+  {
+    "job_id": 2105380,
+    "job_title": "Application Engineer",
+    "job_url": "",
+    "company": {
+      "id": 352547,
+      "name": "ANP Technical Company Limited",
+      "logo": "https://images.vietnamworks.com/pictureofcompany/f8/11084682.png",
+      "industry": [
+        {
+          "id": "25",
+          "name": "IT Software/SaaS"
+        }
+      ],
+      "size": ""
+    },
+    "salary": {
+      "pretty_salary": "$ 400-800 /tháng",
+      "is_salary_visible": true,
+      "salary_min": 400,
+      "salary_max": 800,
+      "salary_range_detail": "400-800"
+    },
+    "requirements": {
+      "years_of_experience": 0,
+      "job_level": "Nhân viên",
+      "skills": [
+        "Technical Support",
+        "Supplier Selection",
+        "Proposal Preparation",
+        "Project Management",
+        "Problem Solving"
+      ],
+      "full_requirement_html": "<p><strong>• Age: 22 – 38</strong></p><p><strong>• Educational background: University-graduated from technical or business faculties: automation, mechanical engineering, electrical, business, or related faculties.</strong></p><p><strong>• New graduate or 01 years in the same products in oil & gas, power, chemical, petrochemical, general industries</strong>.</p><p>• Good in English (Listening - Speaking – Reading – Writing)</p><p>• Must be confident in dealing with all kinds of customers at high levels.</p><p>• Good problem solving, analytical, communication, leading, and presentation skills</p><p>• Willing to travel for business within Vietnam and overseas.</p>",
+      "requirement_preview": "• Age: 22 – 38 • Educational background: University-graduated from technical or business faculties: automation, mechanical engineering, electrical, business, or related faculties. • New graduate or 01 years in the same products in oil & gas, power, c..."
+    },
+    "description": {
+      "full_description_html": "<p><strong>1. BENEFIT</strong></p><p>• Overseas training opportunities with training certificates</p><p>• Competitive salary (400-800 usd)</p><p>• Opportunity to learn from the best</p><p>• 13 months bonus + Health Insurance + Holidays bonus…</p><p>• Team Building with the company 1 to 2 times per year</p><p>• 12 days of annual leave & many day off according to labor law</p><p><br></p><p><strong>2</strong>. <strong>MAJOR RESPONSIBILITY</strong></p><p><strong>A. Technical support:</strong></p><p>1. Receipt of bid/ask requests and technical requirements from customers. Read and analyze relevant technical documents of projects and request clarifications and additions from customers if necessary.</p><p>2. Main responsibility for the supplier's products in terms of selecting the right product type, specifications, detailed drawings, scope of supply, and evaluating the product's response to requirements. requirements, differences and issues to be clarified, if any.</p><p>3. Work directly with the Company on its technical and commercial proposals at the request of customers and make comments and notes for the Sales and Sales Support department.</p><p>4. Check the proposed specifications, drawings, scope of supply from the Company and analyze the points that need adjustment and clarification.</p><p>5. In charge of technical advice when participating in the process of quotation, bidding documents, contract negotiation and drafting.</p><p>6. Responsible for the preparation of technical proposals and technical clarifications with the Company, customers and other suppliers.</p><p>7. Search and work with other Firms and suppliers for supplies, equipment and services that need to be purchased outside when required.</p><p><strong>B. Commercial support</strong></p><p>8. Participate in price reviews of proposed equipment and options to ensure pricing is in line with the proposed range.</p><p>9. Evaluation of prices and content of commercial terms in quotation documents of suppliers (if any).</p><p><strong>C. Support for contract performance</strong></p><p>10. Participate in project management and coordinate information between the airline, customers and other departments during contract performance</p><p>11. Track the production and delivery progress of the Company and suppliers and provide timely technical support.</p><p>12. To be responsible for checking and gathering technical documents as prescribed in the contract.</p><p>13. Analyze technical documents of the Company, suppliers and exchange and clarify with the parties when necessary.</p><p>14. Search, propose to choose suppliers of materials and equipment to buy outside prestige, quality with reasonable prices.</p><p>15. Coordinate with logistics department (Logistics) to check products before shipping to customers, delivery and other problems arising during delivery.</p><p>16. Support customers to supervise the process of installation, testing, inspection and repair of products provided by the company.</p><p><strong>D. Other quests</strong></p><p>17. Attend conferences, seminars, events and presentations from the Company, suppliers.</p><p>18. Report at the request of direct manager.</p><p>19. Ready to work at home & abroad when required.</p><p>20. Other jobs assigned by direct manager</p>",
+      "description_preview": "1. BENEFIT • Overseas training opportunities with training certificates • Competitive salary (400-800 usd) • Opportunity to learn from the best • 13 months bonus + Health Insurance + Holidays bonus… • Team Building with the company 1 to 2 times per y..."
+    },
+    "benefits": [
+      {
+        "name": "Thưởng",
+        "value": "13 months bonus\r\nCompetitive salary (400-800 usd)"
+      },
+      {
+        "name": "Chăm sóc sức khoẻ",
+        "value": "Health Insurance + Holidays bonus…"
+      },
+      {
+        "name": "Nghỉ phép có lương",
+        "value": "12 days of annual leave &amp; many day off according to labor law"
+      },
+      {
+        "name": "Đào tạo",
+        "value": "Overseas training opportunities with training certificates\r\nOpportunity to learn from the best"
+      },
+      {
+        "name": "Cơ hội du lịch",
+        "value": "Overseas training opportunities with training certificates"
+      },
+      {
+        "name": "Hoạt động nhóm",
+        "value": "Team Building with the company 1 to 2 times per year"
+      }
+    ],
+    "locations": [
+      {
+        "city": "Hồ Chí Minh",
+        "address": "No. 29, Street 77, Tan HungWard, HCM City, Vietnam"
+      }
+    ],
+    "dates": {
+      "posted_text": "Đăng lại 4 phút trước",
+      "online_on": "2026-10-13T16:13:36+07:00",
+      "expired_date": "2026-11-12"
+    }
+  },
+  {
+    "job_id": 2106341,
+    "job_title": "Chuyên Viên Triển Khai Phần Mềm",
+    "job_url": "",
+    "company": {
+      "id": 281215,
+      "name": "1C Vietnam LLC",
+      "logo": "https://images.vietnamworks.com/pictureofcompany/ad/11128553.png",
+      "industry": [
+        {
+          "id": "25",
+          "name": "IT Software/SaaS"
+        }
+      ],
+      "size": "25-99"
+    },
+    "salary": {
+      "pretty_salary": "Thương lượng",
+      "is_salary_visible": false,
+      "salary_min": 0,
+      "salary_max": 0,
+      "salary_range_detail": "0-0"
+    },
+    "requirements": {
+      "years_of_experience": 2,
+      "job_level": "Nhân viên",
+      "skills": [
+        "Duy Trì Khách Hàng",
+        "Triển Khai Phần Mềm",
+        "Tài Chính Kế Toán",
+        "Kiểm Tra Phần Mềm",
+        "Kỹ năng giao tiếp"
+      ],
+      "full_requirement_html": "<p><strong>Yêu cầu:</strong></p><p>- Tốt nghiệp Đại học/Cao đẳng các chuyên ngành Kinh tế, Quản trị kinh doanh, Kế toán, Tài chính, CNTT hoặc các chuyên ngành liên quan.</p><p>- Có từ 2 năm kinh nghiệm trong lĩnh vực sản xuất/manufacturing hoặc các nghiệp vụ liên quan.</p><p>- Có kiến thức về hoạt động sản xuất và/hoặc kế toán, tài chính doanh nghiệp.</p><p>- Có khả năng phân tích quy trình, nhu cầu nghiệp vụ và giải quyết vấn đề.</p><p>- Giao tiếp, thuyết trình tốt và có khả năng làm việc trực tiếp với khách hàng.</p><p>- Sẵn sàng học hỏi và nghiên cứu phần mềm, công nghệ và nghiệp vụ mới.</p><p><strong>Ưu tiên</strong></p><p>- Có kinh nghiệm triển khai/tư vấn ERP, MRP hoặc phần mềm quản lý doanh nghiệp.</p><p>- Có kinh nghiệm sử dụng các hệ thống ERP/MRP hoặc phần mềm quản lý sản xuất.</p><p>- Có kinh nghiệm làm việc với khách hàng doanh nghiệp.</p>",
+      "requirement_preview": "Yêu cầu: - Tốt nghiệp Đại học/Cao đẳng các chuyên ngành Kinh tế, Quản trị kinh doanh, Kế toán, Tài chính, CNTT hoặc các chuyên ngành liên quan. - Có từ 2 năm kinh nghiệm trong lĩnh vực sản xuất/manufacturing hoặc các nghiệp vụ liên quan. - Có kiến th..."
+    },
+    "description": {
+      "full_description_html": "<p><em>Được thành lập vào năm 2016 tại Hà Nội, 1C Việt Nam hoạt động với vai trò là nhà phát triển và phân phối các giải pháp phần mềm tự động hóa doanh nghiệp trên nền tảng 1C:Enterprise. Hiện có hơn 5.000 doanh nghiệp tại Việt Nam sử dụng các giải pháp của 1C trong hoạt động kinh doanh hằng ngày. Mạng lưới đối tác của 1C Việt Nam đang tích cực mở rộng trên toàn quốc.</em></p><p><br></p><p><em>Chúng tôi đang cần tuyển ngay vị trí Chuyên viên Triển khai phần mềm 1C:Company Management (1C:CM). Mục tiêu của vị trí này là phát triển phần mềm CM của chúng tôi và hỗ trợ khách hàng về sản phẩm.</em></p><p><br></p><p><strong>Mô tả công việc:</strong></p><p>- Khảo sát, tìm hiểu và phân tích quy trình, nhu cầu nghiệp vụ của khách hàng, đặc biệt trong lĩnh vực sản xuất.</p><p>- Phân tích yêu cầu và tư vấn giải pháp phù hợp trên phần mềm 1C Management.</p><p>- Phối hợp cùng Sales trong việc demo và trình bày giải pháp cho khách hàng.</p><p> -Tham gia triển khai phần mềm theo yêu cầu và quy trình nghiệp vụ của từng dự án.</p><p>- Kiểm thử, đánh giá chức năng phần mềm theo yêu cầu nghiệp vụ và kịch bản triển khai.</p><p>- Hướng dẫn, đào tạo khách hàng sử dụng phần mềm.</p><p>- Hỗ trợ khách hàng trong quá trình triển khai và sử dụng phần mềm; phối hợp xử lý các vấn đề phát sinh.</p><p>- Chủ động nghiên cứu sản phẩm, phần mềm và nghiệp vụ mới để nâng cao năng lực tư vấn và triển khai.</p>",
+      "description_preview": "Được thành lập vào năm 2016 tại Hà Nội, 1C Việt Nam hoạt động với vai trò là nhà phát triển và phân phối các giải pháp phần mềm tự động hóa doanh nghiệp trên nền tảng 1C:Enterprise. Hiện có hơn 5.000 doanh nghiệp tại Việt Nam sử dụng các giải pháp củ..."
+    },
+    "benefits": [
+      {
+        "name": "Chăm sóc sức khoẻ",
+        "value": "Được tham gia đầy đủ các chế độ của BHXH, Bảo hiểm sức khỏe cá nhân DBV"
+      },
+      {
+        "name": "Đào tạo",
+        "value": "Các lớp học tiếng Anh & các ngôn ngữ khác miễn phí"
+      },
+      {
+        "name": "Hoạt động nhóm",
+        "value": "Các sự kiện nội bộ thường niên của công ty (team building, company trip, happy hour hàng tuần...)"
+      },
+      {
+        "name": "Khác",
+        "value": "- Mức lương cạnh tranh\r\n- Làm việc: T2 - T6 với thời gian linh hoạt\r\n- Môi trường làm việc chuyên nghiệp, năng động và thân thiện; Văn phòng xanh - hiện đại\r\n- Quà tặng cho các dịp đặc biệt của cá nhân"
+      }
+    ],
+    "locations": [
+      {
+        "city": "Hà Nội",
+        "address": "21 floor, Century Tower, Times City Mega Mall, 458 Minh Khai Street, Vinh Tuy Ward, Hai Ba Trung District, Hanoi"
+      }
+    ],
+    "dates": {
+      "posted_text": "Cập nhật hôm nay",
+      "online_on": "2026-10-13T16:00:00+07:00",
+      "expired_date": "2026-10-14"
+    }
+  }
+]

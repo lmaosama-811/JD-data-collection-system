@@ -1,0 +1,91 @@
+[
+  {
+    "source": "nodeflair",
+    "job_id": 553228,
+    "title": "Java Tech Lead",
+    "position": "Fullstack",
+    "seniority": [
+      "Lead"
+    ],
+    "tech_stacks": [
+      "Springboot",
+      "Java",
+      "Spring Cloud",
+      "Spring",
+      "Analytics",
+      "Docker",
+      "AWS"
+    ],
+    "experience": {
+      "yoe_min": null,
+      "yoe_max": null
+    },
+    "employment_type": null,
+    "salary": {
+      "min": null,
+      "max": null,
+      "currency": null,
+      "frequency": "Monthly",
+      "formatted_min": "",
+      "formatted_max": "",
+      "is_estimated": true
+    },
+    "company": {
+      "id": 13782,
+      "name": "Eastgate Software",
+      "rating": 0.0,
+      "avatar_url": "https://nodeflair.com/api/v2/companies/13782.png"
+    },
+    "country": "Vietnam",
+    "posted_time_ago": "4 tháng",
+    "job_url": "https://nodeflair.com/jobs/eastgate-software-java-tech-lead-553228",
+    "job_description_text": "Founded in 2014, Eastgate Software is a software development company that builds custom business solutions and applications. We are proud of our highly qualified staff who have more than 20 years of experience in software development including web, mobile, and desktop applications.\nWe put quality and customer satisfaction as the top priorities in every project we carry out. Therefore, our German and US senior experts offer local consultancy for European and US clients.\nAs a member of Eastgate, you will be emerging in a professional and flexible environment where you have opportunities to express your own ideas and improve your skill set through many interesting full-cycle projects.\nYour responsibilities:\nTechnical Direction & Architecture\n7+ years of professional software development experience, with at least 2 years in a Tech Lead or equivalent position.\nLead and guide the technical direction for cloud-based microservices projects, with a focus on 24/7 systems (Traffic Analytics, Data services for traffic light controllers...)\nDesign system architecture and define technical standards and best practices for scalability and long-term maintainability.\nMake architectural decisions to balance business needs, operational costs, and flexibility for future change.\nSoftware Quality\nLead and perform code reviews to ensure compliance with coding standards.\nManage code quality through testing and code quality management tools (e.g., SonarQube).\nEstablish reliability practices suited to 24/7 operations (monitoring, alerting, and resilience).\nMentorship & Collaboration\nProvide mentorship and technical coaching to Java Developers.\nCollaborate with clients to analyze requirements and propose optimal technical solutions.\nCoordinate with DevOps, QA, and Frontend teams to ensure smooth deployment and operations.\nProcess & Delivery\nParticipate in Agile/Scrum processes, maintaining project quality, and delivery timelines.\nRequirements (suggested)\nStrong experience with Java and the Spring ecosystem (Spring Boot, Spring Cloud).\nExperience designing and operating microservices architectures on cloud (AWS/GCP/Azure).\nKnowledge of containerization & orchestration (Docker, Kubernetes).\nExperience with high-availability, 24/7 systems.\nStrong technical leadership, mentoring, and client communication skills.\nGood English communication skills (written and verbal).\nWhy you’ll love working at Eastgate:\nAttractive salary package\nEastgate Software is a\nGlobal Fortune 500 Preferred Vendor\n, so you will have an opportunity to work with many IT Experts around Europe and USA\nBe emerged in a professional and motivating environment where you have opportunities to express your own ideas and improve your skill set through many interesting full-cycle projects\nFlexible working time: 9:30 a.m. to 6:30 p.m., Monday to Friday,\nNo Overtime\n(Only 8 working hours)\nPerformance review and appropriate gratification: twice a year\n13th\nmonth salary +\nProject bonus\n+\n02 probationary months\nwith\nfull salary\nExtra\nhealth check package\nper year\n16 leave\ndays\n/year (will be added an extra day each year and maximum 20 days for annual leave)\nFree snacks, video gaming & movie nights, team social and sport activities",
+    "job_description_html": "<p><span>Founded in 2014, Eastgate Software is a software development company that builds custom business solutions and applications. We are proud of our highly qualified staff who have more than 20 years of experience in software development including web, mobile, and desktop applications. </span></p><p><span>We put quality and customer satisfaction as the top priorities in every project we carry out. Therefore, our German and US senior experts offer local consultancy for European and US clients. </span></p><p><span>As a member of Eastgate, you will be emerging in a professional and flexible environment where you have opportunities to express your own ideas and improve your skill set through many interesting full-cycle projects. </span></p><p><strong>Your responsibilities:</strong><span> </span></p><p><strong>Technical Direction &amp; Architecture</strong><span> </span></p><ul><li>7+ years of professional software development experience, with at least 2 years in a Tech Lead or equivalent position. </li></ul><p><br></p><ul><li>Lead and guide the technical direction for cloud-based microservices projects, with a focus on 24/7 systems (Traffic Analytics, Data services for traffic light controllers...) </li></ul><p><br></p><ul><li>Design system architecture and define technical standards and best practices for scalability and long-term maintainability. </li></ul><p><br></p><ul><li>Make architectural decisions to balance business needs, operational costs, and flexibility for future change. </li></ul><p><br></p><p><strong>Software Quality</strong><span> </span></p><ul><li>Lead and perform code reviews to ensure compliance with coding standards. </li></ul><p><br></p><ul><li>Manage code quality through testing and code quality management tools (e.g., SonarQube). </li></ul><p><br></p><ul><li>Establish reliability practices suited to 24/7 operations (monitoring, alerting, and resilience). </li></ul><p><br></p><p><strong>Mentorship &amp; Collaboration</strong><span> </span></p><ul><li>Provide mentorship and technical coaching to Java Developers. </li></ul><p><br></p><ul><li>Collaborate with clients to analyze requirements and propose optimal technical solutions. </li></ul><p><br></p><ul><li>Coordinate with DevOps, QA, and Frontend teams to ensure smooth deployment and operations. </li></ul><p><br></p><p><strong>Process &amp; Delivery</strong><span> </span></p><ul><li>Participate in Agile/Scrum processes, maintaining project quality, and delivery timelines. </li></ul><p><br></p><p><span> </span></p><p><strong> Requirements (suggested)</strong><span> </span></p><ul><li>Strong experience with Java and the Spring ecosystem (Spring Boot, Spring Cloud). </li></ul><p><br></p><ul><li>Experience designing and operating microservices architectures on cloud (AWS/GCP/Azure). </li></ul><p><br></p><ul><li>Knowledge of containerization &amp; orchestration (Docker, Kubernetes). </li></ul><p><br></p><ul><li>Experience with high-availability, 24/7 systems. </li></ul><p><br></p><ul><li>Strong technical leadership, mentoring, and client communication skills. </li></ul><p><br></p><ul><li>Good English communication skills (written and verbal). </li></ul><p><br></p><p><span> </span></p><p><strong>Why you’ll love working at Eastgate:</strong><span> </span></p><ul><li>Attractive salary package  </li></ul><p><br></p><ul><li>Eastgate Software is a <strong>Global Fortune 500 Preferred Vendor</strong>, so you will have an opportunity to work with many IT Experts around Europe and USA </li></ul><p><br></p><ul><li>Be emerged in a professional and motivating environment where you have opportunities to express your own ideas and improve your skill set through many interesting full-cycle projects </li></ul><p><br></p><ul><li>Flexible working time: 9:30 a.m. to 6:30 p.m., Monday to Friday, <strong>No Overtime</strong> (Only 8 working hours) </li></ul><p><br></p><ul><li>Performance review and appropriate gratification: twice a year </li></ul><p><br></p><ul><li><strong>13th</strong> month salary + <strong>Project bonus</strong> + <strong>02 probationary months</strong> with <strong>full salary</strong>  </li></ul><p><br></p><ul><li>Extra <strong>health check package</strong> per year </li></ul><p><br></p><ul><li><strong>16 leave</strong> <strong>days</strong>/year (will be added an extra day each year and maximum 20 days for annual leave) </li></ul><p><br></p><ul><li>Free snacks, video gaming &amp; movie nights, team social and sport activities </li></ul><p><br></p>",
+    "detail_latency_ms": 278.59
+  },
+  {
+    "source": "nodeflair",
+    "job_id": 552673,
+    "title": "Java Tech Lead/ Senior Engineer (upto $2500)",
+    "position": "Fullstack",
+    "seniority": [
+      "Lead",
+      "Senior"
+    ],
+    "tech_stacks": [
+      "Springboot",
+      "Java",
+      "Spring Cloud",
+      "Spring",
+      "Analytics",
+      "Docker",
+      "AWS"
+    ],
+    "experience": {
+      "yoe_min": null,
+      "yoe_max": null
+    },
+    "employment_type": null,
+    "salary": {
+      "min": null,
+      "max": null,
+      "currency": null,
+      "frequency": "Monthly",
+      "formatted_min": "",
+      "formatted_max": "",
+      "is_estimated": true
+    },
+    "company": {
+      "id": 13782,
+      "name": "Eastgate Software",
+      "rating": 0.0,
+      "avatar_url": "https://nodeflair.com/api/v2/companies/13782.png"
+    },
+    "country": "Vietnam",
+    "posted_time_ago": "4 tháng",
+    "job_url": "https://nodeflair.com/jobs/eastgate-software-java-tech-lead-senior-engineer-upto-2500-552673",
+    "job_description_text": "Founded in 2014, Eastgate Software is a software development company that builds custom business solutions and applications. We are proud of our highly qualified staff who have more than 20 years of experience in software development including web, mobile, and desktop applications.\nWe put quality and customer satisfaction as the top priorities in every project we carry out. Therefore, our German and US senior experts offer local consultancy for European and US clients.\nAs a member of Eastgate, you will be emerging in a professional and flexible environment where you have opportunities to express your own ideas and improve your skill set through many interesting full-cycle projects.\nYour responsibilities:\nTechnical Direction & Architecture\n7+ years of professional software development experience, with at least 2 years in a Tech Lead or equivalent position.\nLead and guide the technical direction for cloud-based microservices projects, with a focus on 24/7 systems (Traffic Analytics, Data services for traffic light controllers...)\nDesign system architecture and define technical standards and best practices for scalability and long-term maintainability.\nMake architectural decisions to balance business needs, operational costs, and flexibility for future change.\nSoftware Quality\nLead and perform code reviews to ensure compliance with coding standards.\nManage code quality through testing and code quality management tools (e.g., SonarQube).\nEstablish reliability practices suited to 24/7 operations (monitoring, alerting, and resilience).\nMentorship & Collaboration\nProvide mentorship and technical coaching to Java Developers.\nCollaborate with clients to analyze requirements and propose optimal technical solutions.\nCoordinate with DevOps, QA, and Frontend teams to ensure smooth deployment and operations.\nProcess & Delivery\nParticipate in Agile/Scrum processes, maintaining project quality, and delivery timelines.\nRequirements (suggested)\nStrong experience with Java and the Spring ecosystem (Spring Boot, Spring Cloud).\nExperience designing and operating microservices architectures on cloud (AWS/GCP/Azure).\nKnowledge of containerization & orchestration (Docker, Kubernetes).\nExperience with high-availability, 24/7 systems.\nStrong technical leadership, mentoring, and client communication skills.\nGood English communication skills (written and verbal).\nWhy you’ll love working at Eastgate:\nAttractive salary package\nEastgate Software is a\nGlobal Fortune 500 Preferred Vendor\n, so you will have an opportunity to work with many IT Experts around Europe and USA\nBe emerged in a professional and motivating environment where you have opportunities to express your own ideas and improve your skill set through many interesting full-cycle projects\nFlexible working time: 9:30 a.m. to 6:30 p.m., Monday to Friday,\nNo Overtime\n(Only 8 working hours)\nPerformance review and appropriate gratification: twice a year\n13th\nmonth salary +\nProject bonus\n+\n02 probationary months\nwith\nfull salary\nExtra\nhealth check package\nper year\n16 leave\ndays\n/year (will be added an extra day each year and maximum 20 days for annual leave)\nFree snacks, video gaming & movie nights, team social and sport activities\nSend us your CV and portfolio to:\nEmail:\nthu.tm@eastgate-software.com",
+    "job_description_html": "<p><span>Founded in 2014, Eastgate Software is a software development company that builds custom business solutions and applications. We are proud of our highly qualified staff who have more than 20 years of experience in software development including web, mobile, and desktop applications. </span></p><p><br></p><p><span>We put quality and customer satisfaction as the top priorities in every project we carry out. Therefore, our German and US senior experts offer local consultancy for European and US clients. </span></p><p><br></p><p><span>As a member of Eastgate, you will be emerging in a professional and flexible environment where you have opportunities to express your own ideas and improve your skill set through many interesting full-cycle projects. </span></p><p><br></p><p><strong>Your responsibilities:</strong><span> </span></p><p><br></p><p><strong>Technical Direction &amp; Architecture</strong><span> </span></p><p><br></p><ul><li>7+ years of professional software development experience, with at least 2 years in a Tech Lead or equivalent position. </li><li>Lead and guide the technical direction for cloud-based microservices projects, with a focus on 24/7 systems (Traffic Analytics, Data services for traffic light controllers...) </li><li>Design system architecture and define technical standards and best practices for scalability and long-term maintainability. </li><li>Make architectural decisions to balance business needs, operational costs, and flexibility for future change. </li></ul><p><strong>Software Quality</strong><span> </span></p><ul><li>Lead and perform code reviews to ensure compliance with coding standards. </li><li>Manage code quality through testing and code quality management tools (e.g., SonarQube). </li><li>Establish reliability practices suited to 24/7 operations (monitoring, alerting, and resilience). </li></ul><p><strong>Mentorship &amp; Collaboration</strong><span> </span></p><p><br></p><ul><li>Provide mentorship and technical coaching to Java Developers. </li><li>Collaborate with clients to analyze requirements and propose optimal technical solutions. </li><li>Coordinate with DevOps, QA, and Frontend teams to ensure smooth deployment and operations. </li></ul><p><strong>Process &amp; Delivery</strong><span> </span></p><p><br></p><ul><li>Participate in Agile/Scrum processes, maintaining project quality, and delivery timelines. </li></ul><p><span> </span></p><p><strong> Requirements (suggested)</strong><span> </span></p><ul><li>Strong experience with Java and the Spring ecosystem (Spring Boot, Spring Cloud). </li><li>Experience designing and operating microservices architectures on cloud (AWS/GCP/Azure). </li><li>Knowledge of containerization &amp; orchestration (Docker, Kubernetes). </li><li>Experience with high-availability, 24/7 systems. </li><li>Strong technical leadership, mentoring, and client communication skills. </li><li>Good English communication skills (written and verbal). </li></ul><p><span> </span></p><p><strong>Why you’ll love working at Eastgate:</strong><span> </span></p><p><br></p><ul><li><span>Attractive salary package  </span></li><li><span>Eastgate Software is a </span><strong>Global Fortune 500 Preferred Vendor</strong><span>, so you will have an opportunity to work with many IT Experts around Europe and USA </span></li><li><span>Be emerged in a professional and motivating environment where you have opportunities to express your own ideas and improve your skill set through many interesting full-cycle projects </span></li><li><span>Flexible working time: 9:30 a.m. to 6:30 p.m., Monday to Friday, </span><strong>No Overtime</strong><span> (Only 8 working hours) </span></li><li><span>Performance review and appropriate gratification: twice a year </span></li><li><strong>13th</strong><span> month salary + </span><strong>Project bonus</strong><span> + </span><strong>02 probationary months</strong><span> with </span><strong>full salary</strong><span>  </span></li><li><span>Extra </span><strong>health check package</strong><span> per year </span></li><li><strong>16 leave</strong><span> </span><strong>days</strong><span>/year (will be added an extra day each year and maximum 20 days for annual leave) </span></li><li><span>Free snacks, video gaming &amp; movie nights, team social and sport activities </span></li></ul><p><br></p><p><strong>Send us your CV and portfolio to:</strong><span> </span></p><p><br></p><p><span>Email: </span>thu.tm@eastgate-software.com<span> </span></p>",
+    "detail_latency_ms": 12269.37
+  }
+]

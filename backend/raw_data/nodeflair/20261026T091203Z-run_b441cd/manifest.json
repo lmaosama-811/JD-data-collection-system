@@ -1,0 +1,19 @@
+{
+  "run_id": "20261026T091203Z-run_b441cd",
+  "platform": "nodeflair",
+  "crawl_date": "2026-10-26",
+  "started_at": "2026-10-26T09:12:03Z",
+  "completed_at": "2026-10-26T09:14:28Z",
+  "status": "success",
+  "job_list_stage": {
+    "requests_total": 1,
+    "requests_success": 1,
+    "requests_failed": 0,
+    "job_ids_collected": 12
+  },
+  "job_detail_stage": {
+    "jobs_success": 5,
+    "jobs_failed": 0
+  },
+  "errors": []
+}

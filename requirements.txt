@@ -10,3 +10,5 @@ requests==2.34.2
 soupsieve==3.0.3
 typing_extensions==4.16.0
 urllib3==2.8.0
+playwright==1.64.0
+# playwright install chromium

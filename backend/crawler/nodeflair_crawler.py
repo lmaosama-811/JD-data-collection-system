@@ -65,11 +65,6 @@ class NodeFlairCrawler(CrawlerBase):
         return result
 
     def crawl_job_detail(self, job_url: str = None, job_id: str = None) -> Optional[Dict[str, Any]]:
-        """
-        Direct Detail REST API call.
-        Returns job details if HTTP 200, None if HTTP 404 or any other error.
-        Nhận job_id, hoặc job_url (job_id được trích từ số trong URL).
-        """
         if not job_id and job_url:
             m = re.search(r"/jobs/(\d+)", job_url) or re.search(r"(\d+)", job_url.split("?")[0])
             job_id = m.group(1) if m else None
@@ -80,11 +75,6 @@ class NodeFlairCrawler(CrawlerBase):
         return self._extract_detail(raw)
 
     def _extract_search(self, raw: str) -> dict:
-        """
-        Nguồn JSON: giữ nguyên toàn bộ nội dung. Chỉ chuẩn hóa về dạng {"meta", "items"}:
-        - items: danh sách job (`job_listings`)
-        - meta: các khóa còn lại (total_listings_count, has_job_alert, ...)
-        """
         payload = json.loads(raw)
         return {
             "meta": {k: v for k, v in payload.items() if k != "job_listings"},
@@ -92,11 +82,9 @@ class NodeFlairCrawler(CrawlerBase):
         }
 
     def _extract_detail(self, raw: str) -> dict:
-        """Nguồn JSON: giữ nguyên toàn bộ response (job, company, salaries)."""
         return json.loads(raw)
 
     def get_job_refs(self, search_result: dict) -> list[dict]:
-        """Từ kết quả search, trích job_id + job_url."""
         refs = []
         for item in search_result.get("items", []):
             job_id = item.get("id")

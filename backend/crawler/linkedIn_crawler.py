@@ -53,11 +53,6 @@ class LinkedInCrawler(CrawlerBase):
         keywords: str = "Python",
         location: str = "Vietnam"
     ) -> dict:
-        """
-        Calls Guest Search API:
-        https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=...&location=...&start=...
-        Trả về {"meta", "items"} đã cắt gọn (xem _extract_search).
-        """
         params = {
             "keywords": keywords,
             "location": location,
@@ -71,12 +66,6 @@ class LinkedInCrawler(CrawlerBase):
         return result
 
     def crawl_job_detail(self, job_url: str = None, job_id: str = None) -> dict:
-        """
-        Calls Guest Detail API:
-        https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{job_id}
-        Nhận job_id, hoặc job_url (job_id sẽ được trích từ URL).
-        Trả về dict đã cắt gọn (xem _extract_detail).
-        """
         if not job_id and job_url:
             m = re.search(r"(\d{6,})", job_url)
             job_id = m.group(1) if m else None
@@ -86,9 +75,6 @@ class LinkedInCrawler(CrawlerBase):
         raw = self._request("GET", url, "LinkedIn detail", headers=self.DEFAULT_HEADERS, timeout=self.timeout)
         return self._extract_detail(raw)
 
-    # ------------------------------------------------------------------
-    # Cắt gọn dữ liệu (chỉ lấy thông tin có ích, chưa ánh xạ sang trường chuẩn)
-    # ------------------------------------------------------------------
     def _parse_search_card(self, card) -> dict:
         t = self._text
         urn = card.get("data-entity-urn") or ""
@@ -115,22 +101,11 @@ class LinkedInCrawler(CrawlerBase):
         }
 
     def _extract_search(self, raw: str) -> dict:
-        """
-        raw: HTML fragment của Guest Search API (danh sách <li> chứa div.base-card, 10 job/trang).
-        API không trả thông tin tổng số job/trang nên meta để rỗng.
-        Bỏ: data-reference-id, data-tracking-id, data-impression-id, data-row/column, ...
-        """
         soup = BeautifulSoup(raw, "lxml")
         items = [self._parse_search_card(c) for c in soup.select("div.base-card")]
         return {"meta": {}, "items": items}
 
     def _extract_detail(self, raw: str) -> dict:
-        """
-        raw: HTML fragment của Guest Detail API (không có JSON-LD).
-        Giữ: tiêu đề, công ty, địa điểm, thời gian đăng, số ứng viên, danh sách criteria
-        (cặp nhãn - giá trị), mô tả (HTML gốc), job_id (decoratedJobPostingId).
-        Bỏ: form đăng nhập, <code id="i18n_...">, "See who X has hired", nút Apply/Save, menu báo cáo.
-        """
         soup = BeautifulSoup(raw, "lxml")
         t = self._text
 

@@ -73,10 +73,6 @@ class TopCVCrawler(CrawlerBase):
                 browser.close()
 
     def _create_session(self) -> requests.Session:
-        """
-        Khởi tạo phiên curl_cffi. Mỗi lần tạo sẽ tự động lấy cookie + CSRF token + User-Agent mới
-        từ trình duyệt. Nếu lấy thất bại thì ném exception để service ghi nhận lỗi.
-        """
         session = requests.Session(impersonate=self.impersonate)
 
         logger.info("Khởi tạo session TopCV: mở trình duyệt lấy cookie/CSRF (headless=%s)", self.headless)
@@ -139,12 +135,8 @@ class TopCVCrawler(CrawlerBase):
         raw = self._request("GET", job_url, "TopCV detail", headers=headers)
         return self._extract_detail(raw)
 
-    # ------------------------------------------------------------------
-    # Cắt gọn dữ liệu (chỉ lấy thông tin có ích, chưa ánh xạ sang trường chuẩn)
-    # ------------------------------------------------------------------
     @classmethod
     def _tooltip_lines(cls, html_title: str) -> list[str]:
-        """Attr `title` của TopCV là 1 đoạn HTML (tooltip) -> danh sách các dòng text."""
         if not html_title:
             return []
         text = BeautifulSoup(html_title, "html.parser").get_text("\n")
@@ -209,11 +201,6 @@ class TopCVCrawler(CrawlerBase):
         return [cls._text(li) for li in BeautifulSoup(html_title, "html.parser").find_all("li")]
 
     def _extract_search(self, raw: str) -> dict:
-        """
-        raw: JSON response của TopCV (data.html_job là HTML chứa các job card).
-        Meta giữ: total, total_page, current_page, count_job_flash, params.
-        Bỏ: html_survey, html_statistics_job_by_category, box_seo_data, option, meta_seo, breadcrumb, ...
-        """
         payload = json.loads(raw)
         if payload.get("status") != "success":
             raise ValueError(f"TopCV search status={payload.get('status')}: {payload.get('message')}")
@@ -233,13 +220,6 @@ class TopCVCrawler(CrawlerBase):
         }
 
     def _extract_detail(self, raw: str) -> dict:
-        """
-        raw: HTML trang chi tiết job.
-        Giữ: JSON-LD JobPosting (bỏ employerOverview vì trùng description), các khối thông tin
-        ở header / general info / địa chỉ-thời gian / tag / category / công ty / hạn ứng tuyển.
-        Các khối dạng "nhãn - giá trị" được lưu theo cặp {label, value}, không phụ thuộc ngôn ngữ nhãn.
-        Bỏ: <script>, popup, việc làm gợi ý, QR/hóa đơn, ...
-        """
         soup = BeautifulSoup(raw, "lxml")
 
         job_posting = None

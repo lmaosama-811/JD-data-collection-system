@@ -23,10 +23,6 @@ class ITViecCrawler(CrawlerBase):
         self.session = self._create_session()
 
     def _create_session(self) -> requests.Session:
-        """
-        Khởi tạo Session curl_cffi giả lập Chrome 124.
-        ITviec sử dụng Cloudflare, nên việc giả lập TLS fingerprint là bắt buộc để tránh bị chặn 403.
-        """
         session = requests.Session(impersonate=self.impersonate)
         session.headers.update({
             "authority": "itviec.com",
@@ -39,10 +35,6 @@ class ITViecCrawler(CrawlerBase):
         return session
 
     def search_jobs(self, page: int = 1) -> dict:
-        """
-        Tải trang danh sách job của ITviec: https://itviec.com/it-jobs?page=x
-        Trả về {"meta", "items"} đã cắt gọn (xem _extract_search).
-        """
         url = f"{self.BASE_URL}/it-jobs?page={page}"
 
         headers = {
@@ -59,10 +51,6 @@ class ITViecCrawler(CrawlerBase):
         return result
 
     def crawl_job_detail(self, job_url: str = None, job_id: str = None) -> dict:
-        """
-        Truy cập link chi tiết job (ITviec chỉ hỗ trợ job_url, job_id bị bỏ qua).
-        Trả về dict đã cắt gọn (xem _extract_detail).
-        """
         if not job_url:
             raise ValueError("ITViecCrawler.crawl_job_detail requires job_url")
         headers = {
@@ -76,9 +64,6 @@ class ITViecCrawler(CrawlerBase):
         raw = self._request("GET", job_url, "ITViec detail", headers=headers)
         return self._extract_detail(raw)
 
-    # ------------------------------------------------------------------
-    # Cắt gọn dữ liệu (chỉ lấy thông tin có ích, chưa ánh xạ sang trường chuẩn)
-    # ------------------------------------------------------------------
     def _abs(self, href: str):
         if not href:
             return None
@@ -122,10 +107,6 @@ class ITViecCrawler(CrawlerBase):
         }
 
     def _extract_search(self, raw: str) -> dict:
-        """
-        raw: HTML trang danh sách. Mỗi job là 1 div.job-card (20 card/trang).
-        Meta: tổng số job (headline) và chuỗi phân trang. Bỏ: attr Stimulus, tracking, importmap, SVG...
-        """
         soup = BeautifulSoup(raw, "lxml")
         items = [self._parse_search_card(c) for c in soup.select("div.job-card")]
         pagination = soup.select_one(".pagination-search-jobs")
@@ -138,12 +119,6 @@ class ITViecCrawler(CrawlerBase):
         }
 
     def _extract_detail(self, raw: str) -> dict:
-        """
-        raw: HTML trang chi tiết job.
-        Giữ: JSON-LD JobPosting, header, khối show-info (địa chỉ/work model/Posted/Skills/Expertise/Domain),
-        các mục nội dung JD (HTML gốc, theo thứ tự), thông tin công ty, thời điểm "Last updated".
-        Bỏ: "More jobs for you", modal, form email, ảnh gallery, script.
-        """
         soup = BeautifulSoup(raw, "lxml")
         t = self._text
 

@@ -51,12 +51,6 @@ class VietnamWorksCrawler(CrawlerBase):
         filter_tech_only: bool = True,
         city_ids: str = None  # Ví dụ "24" (Hà Nội), "29" (TP.HCM), hoặc "24,29"
     ):
-        """
-        Gọi Search Listing API dạng POST.
-        - filter_tech_only: Tự động gắn bộ lọc ngành IT Software/SaaS, IT System, Telecom.
-        - hits_per_page: Lấy tối đa 50 việc làm mỗi request để tối ưu tốc độ.
-        - page: Bắt đầu từ 1 (API nội bộ 0-indexed, được quy đổi bên dưới).
-        """
         filters = []
     
         # 1. Áp dụng bộ lọc chỉ lấy ngành Tech
@@ -95,9 +89,6 @@ class VietnamWorksCrawler(CrawlerBase):
         return result
 
     def crawl_job_detail(self, job_url: str = None, job_id: str = None):
-        """
-        Gọi Tracking / Job-Info API để lấy toàn bộ Job Description, Requirements không bị cắt bớt.
-        """
         if not job_id and job_url:
             m = re.search(r"-(\d+)-jv", job_url) or re.search(r"(\d+)", job_url.split("?")[0])
             job_id = m.group(1) if m else None
@@ -108,11 +99,6 @@ class VietnamWorksCrawler(CrawlerBase):
         return self._extract_detail(raw)
 
     def _extract_search(self, raw: str) -> dict:
-        """
-        Nguồn JSON: giữ nguyên toàn bộ nội dung. Chỉ chuẩn hóa về dạng {"meta", "items"}:
-        - items: danh sách job (`data`)
-        - meta: các khóa còn lại của response (meta, facets, ...)
-        """
         payload = json.loads(raw)
         return {
             "meta": {k: v for k, v in payload.items() if k != "data"},
@@ -120,13 +106,9 @@ class VietnamWorksCrawler(CrawlerBase):
         }
 
     def _extract_detail(self, raw: str) -> dict:
-        """Nguồn JSON: giữ nguyên toàn bộ response (status, message, data)."""
         return json.loads(raw)
 
     def merge_job_data(self, search_item: dict, detail_item: dict) -> dict:
-        """
-        Hợp nhất dữ liệu: Search API (Kỹ năng, phúc lợi, địa chỉ) + Detail API (Full HTML mô tả, yêu cầu).
-        """
         full_desc_html = detail_item.get("job_description") or search_item.get("jobDescription", "")
         full_req_html = detail_item.get("job_requirement") or search_item.get("jobRequirement", "")
 
@@ -184,7 +166,6 @@ class VietnamWorksCrawler(CrawlerBase):
         }
 
     def get_job_refs(self, search_result: dict) -> list[dict]:
-        """Từ kết quả search, trích job_id + job_url."""
         refs = []
         for item in search_result.get("items", []):
             job_id = item.get("jobId")

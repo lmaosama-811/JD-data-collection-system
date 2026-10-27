@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 import json
+import re
 import time
 from pathlib import Path
 from typing import Optional
@@ -11,6 +12,7 @@ logger = get_logger(__name__)
 
 
 RAW_DATA_ROOT = Path(__file__).resolve().parent.parent / "raw_data"
+RAW_TEST_ROOT = Path(__file__).resolve().parent.parent / "raw_test"
 
 
 class CrawlerRequestError(Exception):
@@ -27,6 +29,8 @@ class CrawlerRequestError(Exception):
 
 class CrawlerBase(ABC):
     file_path: Path = None
+    # Nếu đặt (CrawlerService gán mỗi run): mọi response thô có raw_name sẽ được lưu nguyên bản vào đây
+    raw_test_dir: Optional[Path] = None
 
     def save_raw_data(self, data: list[dict], run_id: str, file_name: str):
         """
@@ -51,6 +55,19 @@ class CrawlerBase(ABC):
         """Bỏ query string tracking (?ta_source=..., ?trk=..., ?lab_feature=...)."""
         return (href or "").split("?")[0].strip()
 
+    # TẠM (đối chiếu): lưu response thô ra raw_test_dir. 
+    def _dump_raw_test(self, label: str, url: str, raw: str) -> None:
+        if self.raw_test_dir is None:
+            return
+        try:
+            self.raw_test_dir.mkdir(parents=True, exist_ok=True)
+            seq = len(list(self.raw_test_dir.iterdir())) + 1
+            slug = re.sub(r"[^A-Za-z0-9_.-]+", "_", f"{label}_{url.split('?')[0].rstrip('/').rsplit('/', 1)[-1]}")[:120]
+            ext = "json" if raw.lstrip()[:1] in ("{", "[") else "html"
+            (self.raw_test_dir / f"{seq:03d}_{slug}.{ext}").write_text(raw, encoding="utf-8")
+        except OSError as e:
+            logger.warning("Không lưu được raw_test: %s", e)
+
     def _request(self, method: str, url: str, label: str, **kwargs) -> str:
         """
         Gửi 1 request qua self.session, đo thời gian, log, và kiểm tra mã HTTP.
@@ -68,6 +85,7 @@ class CrawlerBase(ABC):
         if resp.status_code != 200:
             raise CrawlerRequestError(f"{label} HTTP {resp.status_code}", resp.status_code, url)
         logger.info("%s OK trong %.1fs: %s", label, elapsed, url)
+        self._dump_raw_test(label, url, resp.text)
         return resp.text
 
     @abstractmethod

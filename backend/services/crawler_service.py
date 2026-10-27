@@ -6,7 +6,7 @@ from pathlib import Path
 
 # pyrefly: ignore[missing-import]
 from backend.config.log_config import get_logger
-from backend.crawler.crawler_base import CrawlerBase
+from backend.crawler.crawler_base import CrawlerBase, RAW_TEST_ROOT
 from backend.crawler.itviec_crawler import itviec_crawler
 from backend.crawler.linkedIn_crawler import linkedin_crawler
 from backend.crawler.nodeflair_crawler import nodeflair_crawler
@@ -46,6 +46,7 @@ class CrawlerService:
 
         started_at = datetime.now(timezone.utc)
         run_id = self._create_crawl_run_id(started_at)
+        crawler.raw_test_dir = RAW_TEST_ROOT / platform / run_id
         logger.info("[%s] Bắt đầu run %s (max_pages=%s, limit_jobs=%s, delay=%ss)", platform, run_id, max_pages, limit_jobs, delay)
 
         list_total = list_success = list_failed = 0
